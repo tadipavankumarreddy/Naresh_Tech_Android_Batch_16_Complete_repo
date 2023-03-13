@@ -32,3 +32,7 @@
 ### Intents
 - [Intents](https://developer.android.com/guide/components/intents-filters) documentation
 - [Common Intents](https://developer.android.com/guide/components/intents-common)
+
+### Assignment 1
+- Create an application where when the button is pressed you take the user to `Wifi_Settings`. Use common Intents to achieve this.
+
