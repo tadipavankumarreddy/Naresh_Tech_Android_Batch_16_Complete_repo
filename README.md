@@ -38,3 +38,6 @@
 
 ```After completing the assignment, upload the project to your google drive (in zip format) and share the project to pavankreddy.t@gmail.com```
 
+### Constraint Layout
+- One of the very important layouts in android. Explore the layout features in this [link](https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout)
+
