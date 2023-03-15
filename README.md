@@ -36,3 +36,5 @@
 ### Assignment 1
 - Create an application where when the button is pressed you take the user to `Wifi_Settings`. Use common Intents to achieve this.
 
+```After completing the assignment, upload the project to your google drive (in zip format) and share the project to pavankreddy.t@gmail.com```
+
