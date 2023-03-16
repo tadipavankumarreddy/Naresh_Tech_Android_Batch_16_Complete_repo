@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UI Components</string>
+    <string name="hint1">Enter Your Name</string>
+    <string name="hint2">Enter your age</string>
+
+    <string-array name="country">
+        <item>--Select Your Country--</item>
+        <item>India</item>
+        <item>USA</item>
+        <item>Japan</item>
+        <item>USSR</item>
+        <item>Britan</item>
+        <item>Pakistan</item>
+        <item>Somalia</item>
+    </string-array>
+
+</resources>
