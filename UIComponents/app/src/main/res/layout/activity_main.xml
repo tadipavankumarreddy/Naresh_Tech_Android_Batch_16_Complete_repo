@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/person_age"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -35,21 +35,21 @@
         android:layout_height="wrap_content"
         android:text="Gender"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+        app:layout_constraintBottom_toBottomOf="@+id/gender"
+        app:layout_constraintEnd_toStartOf="@+id/gender"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toTopOf="@+id/gender" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/gender"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber">
+        app:layout_constraintTop_toBottomOf="@+id/person_age">
 
         <RadioButton
             android:id="@+id/male"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toStartOf="@+id/hindi"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
 
     <CheckBox
         android:id="@+id/hindi"
@@ -118,10 +118,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hindi" />
 
-    <Switch
+    <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/switch1"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:text="Switch"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Get Data"
+        android:onClick="getData"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
