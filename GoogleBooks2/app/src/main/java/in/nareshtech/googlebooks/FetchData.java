@@ -5,6 +5,10 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -58,7 +62,25 @@ public class FetchData extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         // publish the results to the user
-        tv.setText(s);
+
         progressBar.setVisibility(View.INVISIBLE);
+        // Make the text View display empty ""
+        tv.setText("");
+        try {
+            JSONObject root = new JSONObject(s);
+            // from this root obj, we need to extract items array
+            JSONArray items = root.getJSONArray("items");
+            // loop through the items
+            for(int i =0 ; i<items.length(); i++){
+                JSONObject j = items.getJSONObject(i);
+                JSONObject v = j.getJSONObject("volumeInfo");
+                String title = v.getString("title");
+                tv.append(title+"\n\n");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
