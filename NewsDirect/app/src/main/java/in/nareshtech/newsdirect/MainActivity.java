@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] categories = new String[]{"business","entertainment","general",
-                "health","science","sports","technology"};
+        String[] categories = new String[]{"all", "national", "business", "sports", "world", "politics", "technology", "startup", "entertainment", "miscellaneous", "hatke", "science",
+                "automobile"};
         lv = findViewById(R.id.categories_lv);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
                 categories);
