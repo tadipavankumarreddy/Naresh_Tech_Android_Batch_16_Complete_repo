@@ -1,7 +1,9 @@
 package in.nareshtech.newsdirect;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.browser.customtabs.CustomTabsIntent;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,7 +15,7 @@ public class DetailNews extends AppCompatActivity {
 
     private ImageView iv;
     private TextView title, date,content;
-
+    Datum d;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class DetailNews extends AppCompatActivity {
         date = findViewById(R.id.detail_news_date);
         content = findViewById(R.id.detail_news_content);
 
-        Datum d = (Datum) getIntent().getSerializableExtra("DATATA");
+        d = (Datum) getIntent().getSerializableExtra("DATATA");
         Glide.with(this).load(d.getImageUrl()).into(iv);
         title.setText(d.getTitle());
         date.setText(d.getDate()+"\n"+d.getAuthor());
@@ -32,9 +34,16 @@ public class DetailNews extends AppCompatActivity {
     }
 
     public void readMore(View view) {
+        showcontent(d.getReadMoreUrl());
     }
 
     public void showOriginal(View view) {
+        showcontent(d.getUrl());
+    }
 
+    public void showcontent(String url){
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+        CustomTabsIntent customTabsIntent = builder.build();
+        customTabsIntent.launchUrl(this, Uri.parse(url));
     }
 }
