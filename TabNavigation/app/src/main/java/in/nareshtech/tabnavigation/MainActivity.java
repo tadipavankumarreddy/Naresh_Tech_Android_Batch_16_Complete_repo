@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 switch (position){
-                    case 0: tab.setText("RED"); break;
+                    case 0: tab.setText("Calculate"); break;
                     case 1: tab.setText("GREEN"); break;
                     case 2: tab.setText("BLUE"); break;
                 }

@@ -3,10 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     android:orientation="vertical"
-    android:background="#FF0000"
     tools:context=".RedFragment">
 
+    <EditText
+        android:id="@+id/number_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter a number"
+        android:inputType="number" />
 
+    <EditText
+        android:id="@+id/number_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter a number"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/divi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ff0000"
+        android:textSize="100sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
