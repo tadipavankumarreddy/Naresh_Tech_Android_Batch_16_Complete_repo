@@ -59,4 +59,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // TODO 1: Create a class and extend it to SQLiteOpenHelper (This is a class that eases the use of SQliteDatabase)
+    // TODO 5: Make the database of this application available for other applications to use.
+
 }
