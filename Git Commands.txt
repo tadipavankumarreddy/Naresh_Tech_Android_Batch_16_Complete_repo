@@ -1,0 +1,71 @@
+Git 
+- Source code management (SCM) and Version Control Software
+- This is the "Distributed Version Control System"
+
+Version Control Systems
+- Centralized version control System
+- Distributed Version Control system
+
+Disadvantages of CVCS:
+- If the server crashes for some reason -> all your work is gone
+- If there is no internet connectivity -> You carryout the task
+
+Advantages of DVCS:
+- There is no dependency with the internet as we can work with the existing project on the local syste,
+- Even when the server crashes, the code is still available on the local systems
+
+What is the need of Source code management and Version Control?
+In software development process, there are many stake holders working simultaneously.
+
+Git vs Github
+
+git is a tool
+git is developed by the open source community lead by Linus Torvalds 
+(he is man behind linux kernel)
+github is a hosting platform (cloud Service)
+currenty github is owned by "Microsoft".
+ 
+Other cloud services Just like github
+- bitbucket
+- gitlab
+
+Git Basics:
+Configure git 
+	1.Check if configuration happened
+	- git config user.email
+	- git config user.name
+	2.Configuring git	
+	- git config --global user.email "tadipavankumarreddy@gmail.com"
+	- git config --global user.name "Pavan Kumar"
+
+How to initialize a project ?
+1. you can start with a existing code
+2. You can start afresh
+
+- git init
+This command initializes the git project with which we get an invisible folder ".git"
+
+How do we check if files are tracked by git or added to git ?
+- git status
+
+How to move a file(s) to staging area ?
+- git add <file name1> <file name2>
+
+How do we move the file(s) in the staging area to Repository ?
+- git commit -m "Reason for making the commit"
+
+What comes with a commit ?
+- Every commit will have 40 bit character length SHA(Secure hash algorithm) key
+- With the help of his hash key we can roll the project back to this state anytime in the future.
+
+How do we check the number of commits that are made in the project ?
+- git log
+- git log --oneline
+- git log --reverse 
+
+How do we roll the project back to version 1 ?
+- git checkout <Commit Id (first 7 characters are sufficient>
+
+If you want to comeback ?
+- git switch -
+
