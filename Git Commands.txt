@@ -69,5 +69,24 @@ How do we roll the project back to version 1 ?
 If you want to comeback ?
 - git switch -
 
-
-
+How do we work with Host(gitHub) ?
+- First login to github
+- create a repository
+- We need to add the remote
+	- remote is something that holds the url
+	How do we add a remote ?
+	before we add a remote, check if there is an existing remote	
+	- git remote
+	if there is no remote present create oneline	
+	- git remote add <var name> <link>
+	What is the need of adding a remote ?
+	- to communicate (synchronize) the push & pull of data corresponding to the repository
+	How do we push data ?
+	- git push origin master
+	What rules to be remembered while pushing the changes to the server (github)?
+	- Check if the server had new files added to the project	
+		- if yes, first pull down the changes using pull command
+			- git pull origin master
+		- if no, proceed to push changes
+	
+	
