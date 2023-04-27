@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "659841499237",
+    "firebase_url": "https://rtd-demo-56407-default-rtdb.firebaseio.com",
+    "project_id": "rtd-demo-56407",
+    "storage_bucket": "rtd-demo-56407.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659841499237:android:2b508a59ee72e7cd22068c",
+        "android_client_info": {
+          "package_name": "in.nareshtech.firebaserealtimedatabases"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659841499237-dm93aitsljgk9n6tbsfi8kfd3qeubcjh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY3ZOqXie7RKjS1Ke9LtQS5USmQmr6rhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659841499237-dm93aitsljgk9n6tbsfi8kfd3qeubcjh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
